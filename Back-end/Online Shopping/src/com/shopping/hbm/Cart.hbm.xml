@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="Cart" table="cart">
+    <id name="id" type="long" column="id">
+    	<generator class="assigned"></generator>
+    </id>
+    <property name="date" type="date" column="date"></property>
+    <property name="id_user" type="long" column="id_user"></property>
+     <property name="count" type="int" column="count"></property>
+     
+    </class>
+    
+</hibernate-mapping>

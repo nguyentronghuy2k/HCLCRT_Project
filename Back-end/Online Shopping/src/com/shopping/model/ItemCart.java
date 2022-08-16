@@ -1,9 +1,20 @@
 package com.shopping.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="item_cart")
 public class ItemCart {
+	@Id
 	private Long id;
+	@Column
 	private String name;
+	@Column
 	private Long id_item;
+	@Column
 	private Long id_cart;
 	public Long getId() {
 		return id;

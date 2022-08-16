@@ -1,11 +1,22 @@
 package com.shopping.model;
-
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+@Entity
+@Table(name="shop")
 public class Shop {
+	@Id
 	private Long id;
+	@Column
 	private String name;
+	@Column
 	private String address;
+	@Column
 	private String phoneNumber;
+	@Column
 	private String describe;
+	@Column
 	private String img;
 	public Long getId() {
 		return id;
