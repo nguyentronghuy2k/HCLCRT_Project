@@ -11,7 +11,12 @@ import com.shopping.model.Cart;
 import com.shopping.util.HibernateUtil;
 
 public class CartDAOHibernate {
-	SessionFactory sessionfactory = HibernateUtil.getSessionFactory();
+	SessionFactory sessionfactory;
+	public CartDAOHibernate() {
+		// TODO Auto-generated constructor stub
+		sessionfactory = HibernateUtil.getSessionFactory();
+	}
+	
 	public void insert(Cart cart) {
 		
 		Session session = sessionfactory.openSession();
@@ -57,7 +62,7 @@ public class CartDAOHibernate {
 
 		cart=(Cart) session.get(Cart.class, id);
 
-		
+		session.close();
 		return cart;
 	}
 }

@@ -1,21 +1,32 @@
 package com.shopping.model;
 
 import javax.persistence.Column;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.NamedQueries;
+import org.hibernate.annotations.NamedQuery;
+
+@NamedQueries(
+{
+@NamedQuery(name="getAll",query="from ItemCart")
+​}
+
+)
+
 @Entity
-@Table(name="item_cart")
+@Table(name="itemCart")
 public class ItemCart {
 	@Id
 	private Long id;
 	@Column
 	private String name;
 	@Column
-	private Long id_item;
+	private Long idItem;
 	@Column
-	private Long id_cart;
+	private Long idCart;
 	public Long getId() {
 		return id;
 	}
@@ -29,23 +40,23 @@ public class ItemCart {
 		this.name = name;
 	}
 	public Long getId_item() {
-		return id_item;
+		return idItem;
 	}
 	public void setId_item(Long id_item) {
-		this.id_item = id_item;
+		this.idItem = id_item;
 	}
 	public Long getId_cart() {
-		return id_cart;
+		return idCart;
 	}
 	public void setId_cart(Long id_cart) {
-		this.id_cart = id_cart;
+		this.idCart = id_cart;
 	}
 	
 	public ItemCart(Long id, String name, Long id_item, Long id_cart) {
 		this.id = id;
 		this.name = name;
-		this.id_item = id_item;
-		this.id_cart = id_cart;
+		this.idItem = id_item;
+		this.idCart = id_cart;
 	}
 	
 	
