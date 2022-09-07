@@ -9,12 +9,12 @@ import javax.persistence.Table;
 import org.hibernate.annotations.NamedQueries;
 import org.hibernate.annotations.NamedQuery;
 
-@NamedQueries(
-{
-@NamedQuery(name="getAll",query="from ItemCart")
-​}
-
-)
+//@NamedQueries(
+//{
+//@NamedQuery(name="getAll",query="from ItemCart")
+//​}
+//
+//)
 
 @Entity
 @Table(name="itemCart")

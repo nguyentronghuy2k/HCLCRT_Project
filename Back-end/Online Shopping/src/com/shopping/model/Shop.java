@@ -54,7 +54,9 @@ public class Shop {
 	public void setImg(String img) {
 		this.img = img;
 	}
-	
+	public Shop() {
+		
+	}
 	public Shop(Long id, String name, String address, String phoneNumber, String describe, String img) {
 		this.id = id;
 		this.name = name;

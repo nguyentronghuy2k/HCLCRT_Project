@@ -10,9 +10,9 @@ public class Item {
 	private String describe;
 	private String img;
 	private Date releaseDate;
-	private Long id_category;
-	private Long id_producer;
-	private Long id_shop;
+	private Long idCategory;
+	private Long idProducer;
+	private Long idShop;
 	public Long getId() {
 		return id;
 	}
@@ -55,27 +55,32 @@ public class Item {
 	public void setReleaseDate(Date releaseDate) {
 		this.releaseDate = releaseDate;
 	}
-	public Long getId_category() {
-		return id_category;
+	
+	
+	public Long getIdCategory() {
+		return idCategory;
 	}
-	public void setId_category(Long id_category) {
-		this.id_category = id_category;
+	public void setIdCategory(Long idCategory) {
+		this.idCategory = idCategory;
 	}
-	public Long getId_producer() {
-		return id_producer;
+	public Long getIdProducer() {
+		return idProducer;
 	}
-	public void setId_producer(Long id_producer) {
-		this.id_producer = id_producer;
+	public void setIdProducer(Long idProducer) {
+		this.idProducer = idProducer;
 	}
-	public Long getId_shop() {
-		return id_shop;
+	public Long getIdShop() {
+		return idShop;
 	}
-	public void setId_shop(Long id_shop) {
-		this.id_shop = id_shop;
+	public void setIdShop(Long idShop) {
+		this.idShop = idShop;
+	}
+	public Item() {
+		
 	}
 	
 	public Item(Long id, String name, Long price, Integer saled, String describe, String img, Date releaseDate,
-			Long id_category, Long id_producer, Long id_shop) {
+			Long idCategory, Long idProducer, Long idShop) {
 		this.id = id;
 		this.name = name;
 		this.price = price;
@@ -83,9 +88,9 @@ public class Item {
 		this.describe = describe;
 		this.img = img;
 		this.releaseDate = releaseDate;
-		this.id_category = id_category;
-		this.id_producer = id_producer;
-		this.id_shop = id_shop;
+		this.idCategory = idCategory;
+		this.idProducer = idProducer;
+		this.idShop = idShop;
 	}
 	
 	

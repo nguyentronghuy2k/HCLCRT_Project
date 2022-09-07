@@ -21,7 +21,13 @@
         <property name = "dataSource" ref = "dataSource"></property>
     </bean>
    
-    <bean id="ItemDAO" class = "com.shopping.SpringJdbcDAO.ItemDAO">
-        <property name = "jdbcTemplate" ref = "jdbcTemplate"></property>
+    <bean id="ItemDAO" class = "com.shopping.SpringJdbcDAO.ItemDAOSJ">
+        <property name = "dataSource" ref = "dataSource"></property>
+    </bean>
+    <bean id="ShopDAO" class = "com.shopping.SpringJdbcDAO.ShopDAOSJ">
+        <property name = "dataSource" ref = "dataSource"></property>
+    </bean>
+    <bean id="UserDAO" class = "com.shopping.SpringJdbcDAO.UserDAOSJ">
+        <property name = "dataSource" ref = "dataSource"></property>
     </bean>
 </beans>

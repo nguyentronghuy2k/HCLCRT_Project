@@ -41,9 +41,9 @@ public class ItemDAO {
 		ps.setString(5, item.getDescribe());
 		ps.setString(6, item.getImg());
 		ps.setDate(7, (Date) item.getReleaseDate());
-		ps.setLong(8, item.getId_category());
-		ps.setLong(9, item.getId_producer());
-		ps.setLong(10, item.getId_shop());
+		ps.setLong(8, item.getIdCategory());
+		ps.setLong(9, item.getIdProducer());
+		ps.setLong(10, item.getIdShop());
 
 		ps.executeUpdate();
 	}
@@ -59,9 +59,9 @@ public class ItemDAO {
 		ps.setString(5, item.getDescribe());
 		ps.setString(6, item.getImg());
 		ps.setDate(7, (Date) item.getReleaseDate());
-		ps.setLong(8, item.getId_category());
-		ps.setLong(9, item.getId_producer());
-		ps.setLong(10, item.getId_shop());
+		ps.setLong(8, item.getIdCategory());
+		ps.setLong(9, item.getIdProducer());
+		ps.setLong(10, item.getIdShop());
 		ps.setLong(11, item.getId());
 
 		ps.executeUpdate();

@@ -57,7 +57,9 @@ public class User {
 	public void setType(Integer type) {
 		this.type = type;
 	}
-	
+	public User() {
+		
+	}
 	public User(Long id, String username, String password, String fullName, String email, String phoneNumber,
 			String address, Integer type) {
 		this.id = id;
